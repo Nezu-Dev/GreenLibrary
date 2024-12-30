@@ -8,3 +8,14 @@ C:\Users\Fatih\Desktop\GreenLibrary\GreenLibrary\obj\Debug\GreenLibrary.csproj.G
 C:\Users\Fatih\Desktop\GreenLibrary\GreenLibrary\obj\Debug\GreenLibrary.csproj.CoreCompileInputs.cache
 C:\Users\Fatih\Desktop\GreenLibrary\GreenLibrary\obj\Debug\GreenLibrary.exe
 C:\Users\Fatih\Desktop\GreenLibrary\GreenLibrary\obj\Debug\GreenLibrary.pdb
+C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\bin\Debug\GreenLibrary.exe.config
+C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\bin\Debug\GreenLibrary.exe
+C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\bin\Debug\GreenLibrary.pdb
+C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.csproj.AssemblyReference.cache
+C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.LogIn.resources
+C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.Properties.Resources.resources
+C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.csproj.GenerateResource.cache
+C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.exe
+C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.pdb
+C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.SignUp.resources

@@ -59,6 +59,7 @@ namespace GreenLibrary
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+        
 
         }
 
@@ -74,6 +75,14 @@ namespace GreenLibrary
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SignUp form2 = new SignUp();
+            form2.Show();             // Yeni formu açar
+            this.Hide();              // Mevcut formu gizler
 
         }
     }
