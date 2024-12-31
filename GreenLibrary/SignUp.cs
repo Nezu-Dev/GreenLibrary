@@ -42,5 +42,20 @@ namespace GreenLibrary
             textBox1.Focus();  // TextBox'a odaklanmayı sağlar
 
         }
+
+      
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+            textBox2.PasswordChar = '*';
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "")
+            {
+                MessageBox.Show("Lütfen tüm gerekli alanları doldurun.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }

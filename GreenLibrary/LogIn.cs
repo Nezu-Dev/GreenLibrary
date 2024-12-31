@@ -59,7 +59,8 @@ namespace GreenLibrary
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-        
+            
+           
 
         }
 
@@ -84,6 +85,14 @@ namespace GreenLibrary
             form2.Show();             // Yeni formu açar
             this.Hide();              // Mevcut formu gizler
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "" || textBox2.Text == "")
+            {
+                MessageBox.Show("Lütfen tüm gerekli alanları doldurun.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
