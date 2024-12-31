@@ -9,11 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using System.Data.SqlClient;
 
 namespace GreenLibrary
 {
     public partial class LogIn : Form
     {
+        SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS; Initial Catalog =GreenLibrary; Integrated Security = true;");
+        SqlCommand cmd;
+        SqlDataAdapter adapt;
+
         public LogIn()
         {
             InitializeComponent();
@@ -51,6 +56,29 @@ namespace GreenLibrary
                 SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
             }
         }
+
+        public bool KullaniciDogrula(string username, string password)
+        {
+            string query = "SELECT COUNT(1) FROM RegUser WHERE Username = @username AND PasswordGL = @passwordgl";
+
+            cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@username", username);
+            cmd.Parameters.AddWithValue("@passwordgl", password);
+
+            con.Open();
+            int count = Convert.ToInt32(cmd.ExecuteScalar());
+            con.Close();
+
+            if (count == 1)
+            {
+                return true; // Kullanıcı varsa true döner
+            }
+            else
+            {
+                return false; // Kullanıcı yoksa false döner
+            }
+        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -92,6 +120,18 @@ namespace GreenLibrary
             if (textBox1.Text == "" || textBox2.Text == "")
             {
                 MessageBox.Show("Lütfen tüm gerekli alanları doldurun.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            string username = textBox1.Text; // Kullanıcı adı
+            string password = textBox2.Text; // Şifre
+
+            if (KullaniciDogrula(username, password))
+            {
+                MessageBox.Show("Giriş başarılı!");
+                // Yeni bir form açabilir veya işlemlere devam edebilirsiniz
+            }
+            else
+            {
+                MessageBox.Show("Kullanıcı adı veya şifre hatalı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
