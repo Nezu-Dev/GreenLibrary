@@ -8,7 +8,7 @@ namespace GreenLibrary
     public partial class SignUp : Form
     {
 
-        SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS; Initial Catalog =Kitaplar; Integrated Security = true;");
+        SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS; Initial Catalog =GreenLibrary; Integrated Security = true;");
         SqlCommand cmd;
         SqlDataAdapter adapt;
 
@@ -22,10 +22,24 @@ namespace GreenLibrary
         private const int WM_NCLBUTTONDOWN = 0xA1;
         private const int HTCAPTION = 0x2;
 
+        public void UserAdd()
+        {
+            cmd = new SqlCommand("Insert Into RegUser(Username, PasswordGL, Email, FavoriteBook) Values(@username, @passwordgl, @email, @favoritebook)", con);
+            con.Open();
+            cmd.Parameters.AddWithValue("@username", textBox1.Text);
+            cmd.Parameters.AddWithValue("@passwordgl", textBox2.Text);
+            cmd.Parameters.AddWithValue("@email", textBox3.Text);
+            cmd.Parameters.AddWithValue("@favoritebook", textBox4.Text);
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
         public SignUp()
         {
             InitializeComponent();
+
         }
+        
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -60,8 +74,24 @@ namespace GreenLibrary
         {
             if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "")
             {
-                MessageBox.Show("Lütfen tüm gerekli alanları doldurun.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                DialogResult msjsonuc = MessageBox.Show("Lütfen tüm gerekli alanları doldurun.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
+
+            else
+            {
+                DialogResult msjsonuc2 = MessageBox.Show("Başarıyla kayıt oldunuz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (msjsonuc2 == DialogResult.OK)
+                {
+                    LogIn Grs = new LogIn();
+                    Grs.Show();             // Yeni formu açar
+                    this.Hide();
+                    UserAdd();
+                }
+
+            }
+
+
         }
     }
 }
