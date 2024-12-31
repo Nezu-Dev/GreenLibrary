@@ -94,5 +94,12 @@ namespace GreenLibrary
                 MessageBox.Show("Lütfen tüm gerekli alanları doldurun.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            ForgotPassword form3 = new ForgotPassword();
+            form3.Show();             // Yeni formu açar
+            this.Hide();
+        }
     }
 }

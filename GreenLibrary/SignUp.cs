@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlClient;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -6,6 +7,11 @@ namespace GreenLibrary
 {
     public partial class SignUp : Form
     {
+
+        SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS; Initial Catalog =Kitaplar; Integrated Security = true;");
+        SqlCommand cmd;
+        SqlDataAdapter adapt;
+
         // Windows API importları
         [DllImport("user32.dll")]
         public static extern void ReleaseCapture();
@@ -39,7 +45,7 @@ namespace GreenLibrary
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            textBox1.Focus();  // TextBox'a odaklanmayı sağlar
+           
 
         }
 
