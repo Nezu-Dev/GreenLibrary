@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -11,6 +12,13 @@ namespace GreenLibrary
         SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS; Initial Catalog =GreenLibrary; Integrated Security = true;");
         SqlCommand cmd;
         SqlDataAdapter adapt;
+
+
+        private void AdjustTextBoxHeight(TextBox textBox)
+        {
+            // Yazı tipi boyutuna göre TextBox yüksekliğini ayarlar
+            textBox.Height = textBox.PreferredHeight;
+        }
 
         // Windows API importları
         [DllImport("user32.dll")]
@@ -57,12 +65,6 @@ namespace GreenLibrary
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-           
-
-        }
-
       
 
         private void textBox2_TextChanged_1(object sender, EventArgs e)
@@ -92,6 +94,31 @@ namespace GreenLibrary
             }
 
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+            textBox1.Font = new Font("Poppins", 14, FontStyle.Bold);
+            AdjustTextBoxHeight(textBox1);
+
+            textBox2.Font = new Font("Poppins", 14, FontStyle.Bold);
+            AdjustTextBoxHeight(textBox2);
+
+            textBox3.Font = new Font("Poppins", 14, FontStyle.Bold);
+            AdjustTextBoxHeight(textBox3);
+
+            textBox4.Font = new Font("Poppins", 14, FontStyle.Bold);
+            AdjustTextBoxHeight(textBox4);
         }
     }
 }

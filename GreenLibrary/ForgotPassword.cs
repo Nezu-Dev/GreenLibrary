@@ -9,6 +9,7 @@ using System.Runtime.InteropServices; // Windows API için gerekli
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GreenLibrary
 {
@@ -23,8 +24,12 @@ namespace GreenLibrary
             InitializeComponent();
         }
 
-        
-        
+
+        private void AdjustTextBoxHeight(System.Windows.Forms.TextBox textBox)
+        {
+            textBox.Height = textBox.PreferredHeight;
+        }
+
 
 
         // Windows API işlevlerini tanımlıyoruz
@@ -92,6 +97,25 @@ namespace GreenLibrary
             {
                 MessageBox.Show("Girilen bilgilerle eşleşen bir hesap bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ForgotPassword_Load(object sender, EventArgs e)
+        {
+            textBox1.Font = new Font("Poppins", 14, FontStyle.Bold);
+            AdjustTextBoxHeight(textBox1);
+
+            textBox2.Font = new Font("Poppins", 14, FontStyle.Bold);
+            AdjustTextBoxHeight(textBox2);
+
+            textBox3.Font = new Font("Poppins", 14, FontStyle.Bold);
+            AdjustTextBoxHeight(textBox3);
+
+            
         }
     }
 }

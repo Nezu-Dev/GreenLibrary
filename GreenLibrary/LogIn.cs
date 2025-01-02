@@ -18,6 +18,12 @@ namespace GreenLibrary
         SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS; Initial Catalog =GreenLibrary; Integrated Security = true;");
         SqlCommand cmd;
         SqlDataAdapter adapt;
+        private void AdjustTextBoxHeight(TextBox textBox)
+        {
+            // Yazı tipi boyutuna göre TextBox yüksekliğini ayarlar
+            textBox.Height = textBox.PreferredHeight;
+        }
+
 
         public LogIn()
         {
@@ -87,9 +93,7 @@ namespace GreenLibrary
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
            
-
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -99,7 +103,7 @@ namespace GreenLibrary
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            textBox2.PasswordChar = ' ';
+          
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -140,6 +144,15 @@ namespace GreenLibrary
             ForgotPassword form3 = new ForgotPassword();
             form3.Show();             // Yeni formu açar
             this.Hide();
+        }
+
+        private void LogIn_Load(object sender, EventArgs e)
+        {
+            textBox1.Font = new Font("Poppins", 14, FontStyle.Bold);
+            AdjustTextBoxHeight(textBox1);
+
+            textBox2.Font = new Font("Poppins", 14, FontStyle.Bold);
+            AdjustTextBoxHeight(textBox2);
         }
     }
 }
