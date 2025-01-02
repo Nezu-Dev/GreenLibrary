@@ -99,7 +99,7 @@ namespace GreenLibrary
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-
+            textBox2.PasswordChar = ' ';
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
