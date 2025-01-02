@@ -21,3 +21,4 @@ C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.pdb
 C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.SignUp.resources
 C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.ForgotPassword.resources
 C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.AdminLogin.resources
+C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.AdminDashboard.resources

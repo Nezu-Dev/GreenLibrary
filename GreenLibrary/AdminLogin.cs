@@ -69,11 +69,6 @@ namespace GreenLibrary
             return count == 1;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             textBox2.PasswordChar = '*';
@@ -99,8 +94,9 @@ namespace GreenLibrary
 
             if (ValidateAdmin(adminName, adminPassword)) // Call the validation method
             {
-                MessageBox.Show("Giriş başarılı!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                // Redirect to admin dashboard or next form
+                AdminDashboard login = new AdminDashboard();
+                login.Show();
+                this.Hide();
             }
             else
             {
