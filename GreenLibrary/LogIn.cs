@@ -154,5 +154,12 @@ namespace GreenLibrary
             textBox2.Font = new Font("Poppins", 14, FontStyle.Bold);
             AdjustTextBoxHeight(textBox2);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AdminLogin admin = new AdminLogin();
+            admin.Show();             // Yeni formu açar
+            this.Hide();
+        }
     }
 }
