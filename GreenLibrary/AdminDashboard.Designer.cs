@@ -49,6 +49,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(456, 50);
             this.panel2.TabIndex = 18;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             // 
             // pictureBox2
             // 
@@ -85,8 +86,9 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(220, 49);
             this.button5.TabIndex = 20;
-            this.button5.Text = "Personnel Registration";
+            this.button5.Text = "Book Management";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -115,7 +117,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(220, 49);
             this.button7.TabIndex = 21;
-            this.button7.Text = "User Management";
+            this.button7.Text = "Member Management";
             this.button7.UseVisualStyleBackColor = false;
             // 
             // button8
@@ -130,7 +132,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(220, 49);
             this.button8.TabIndex = 22;
-            this.button8.Text = "Activity Log";
+            this.button8.Text = "Penalty Management";
             this.button8.UseVisualStyleBackColor = false;
             // 
             // AdminDashboard

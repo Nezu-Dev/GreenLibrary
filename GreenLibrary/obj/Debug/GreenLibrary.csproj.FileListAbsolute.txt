@@ -22,3 +22,4 @@ C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.Sig
 C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.ForgotPassword.resources
 C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.AdminLogin.resources
 C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.AdminDashboard.resources
+C:\Users\Fatih\Desktop\GreenLibrary-main\GreenLibrary\obj\Debug\GreenLibrary.BookManagement.resources
