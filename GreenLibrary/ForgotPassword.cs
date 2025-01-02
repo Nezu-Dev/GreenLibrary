@@ -1,38 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices; // Windows API için gerekli
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GreenLibrary
 {
     public partial class ForgotPassword : Form
     {
-
-        SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS; Initial Catalog =GreenLibrary; Integrated Security = true;");
+        SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS; Initial Catalog=GreenLibrary; Integrated Security=true;");
         SqlCommand cmd;
         SqlDataAdapter adapt;
+
         public ForgotPassword()
         {
             InitializeComponent();
         }
 
-
-        private void AdjustTextBoxHeight(System.Windows.Forms.TextBox textBox)
-        {
-            textBox.Height = textBox.PreferredHeight;
-        }
-
-
-
-        // Windows API işlevlerini tanımlıyoruz
         [DllImport("user32.dll")]
         public static extern void ReleaseCapture();
 
@@ -42,12 +27,16 @@ namespace GreenLibrary
         private const int WM_NCLBUTTONDOWN = 0xA1;
         private const int HTCAPTION = 0x2;
 
+        private void AdjustTextBoxHeight(TextBox textBox)
+        {
+            textBox.Height = textBox.PreferredHeight;
+        }
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        // Panel üzerine MouseDown olayı ekliyoruz
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -59,35 +48,29 @@ namespace GreenLibrary
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string username = textBox1.Text; // Kullanıcı adı
-            string email = textBox2.Text;   // E-posta
-            string favoriteBook = textBox3.Text; // Favori kitap
+            string username = textBox1.Text;
+            string email = textBox2.Text;
+            string favoriteBook = textBox3.Text;
 
-            // SQL sorgusu
             string query = "SELECT PasswordGL FROM RegUser WHERE Username = @username AND Email = @email AND FavoriteBook = @favoriteBook";
 
-            // SQL komutu oluştur
             cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@username", username);
             cmd.Parameters.AddWithValue("@email", email);
             cmd.Parameters.AddWithValue("@favoriteBook", favoriteBook);
 
-            // Veritabanı bağlantısını aç
             if (con.State == ConnectionState.Closed)
             {
                 con.Open();
             }
 
-            // Sorguyu çalıştır ve sonucu al
             var result = cmd.ExecuteScalar();
 
-            // Bağlantıyı kapat
             if (con.State == ConnectionState.Open)
             {
                 con.Close();
             }
 
-            // Sonucu kontrol et
             if (result != null)
             {
                 string password = result.ToString();
@@ -101,7 +84,6 @@ namespace GreenLibrary
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void ForgotPassword_Load(object sender, EventArgs e)
@@ -114,13 +96,10 @@ namespace GreenLibrary
 
             textBox3.Font = new Font("Poppins", 14, FontStyle.Bold);
             AdjustTextBoxHeight(textBox3);
-
-            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
     }
 }

@@ -8,19 +8,15 @@ namespace GreenLibrary
 {
     public partial class SignUp : Form
     {
-
-        SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS; Initial Catalog =GreenLibrary; Integrated Security = true;");
+        SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS; Initial Catalog=GreenLibrary; Integrated Security=true;");
         SqlCommand cmd;
         SqlDataAdapter adapt;
 
-
         private void AdjustTextBoxHeight(TextBox textBox)
         {
-            // Yazı tipi boyutuna göre TextBox yüksekliğini ayarlar
             textBox.Height = textBox.PreferredHeight;
         }
 
-        // Windows API importları
         [DllImport("user32.dll")]
         public static extern void ReleaseCapture();
 
@@ -32,7 +28,10 @@ namespace GreenLibrary
 
         public void UserAdd()
         {
-            cmd = new SqlCommand("Insert Into RegUser(Username, PasswordGL, Email, FavoriteBook) Values(@username, @passwordgl, @email, @favoritebook)", con);
+            cmd = new SqlCommand(
+                "Insert Into RegUser(Username, PasswordGL, Email, FavoriteBook) Values(@username, @passwordgl, @email, @favoritebook)",
+                con
+            );
             con.Open();
             cmd.Parameters.AddWithValue("@username", textBox1.Text);
             cmd.Parameters.AddWithValue("@passwordgl", textBox2.Text);
@@ -45,17 +44,13 @@ namespace GreenLibrary
         public SignUp()
         {
             InitializeComponent();
-
         }
-        
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            // Formu kapatma
             this.Close();
         }
 
-        // Panel tıklama işlemi ile formu taşıma
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -64,8 +59,6 @@ namespace GreenLibrary
                 SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
             }
         }
-
-      
 
         private void textBox2_TextChanged_1(object sender, EventArgs e)
         {
@@ -76,34 +69,38 @@ namespace GreenLibrary
         {
             if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox4.Text == "")
             {
-                DialogResult msjsonuc = MessageBox.Show("Lütfen tüm gerekli alanları doldurun.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+                DialogResult msjsonuc = MessageBox.Show(
+                    "Lütfen tüm gerekli alanları doldurun.",
+                    "Uyarı",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
             }
-
             else
             {
-                DialogResult msjsonuc2 = MessageBox.Show("Başarıyla kayıt oldunuz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DialogResult msjsonuc2 = MessageBox.Show(
+                    "Başarıyla kayıt oldunuz.",
+                    "Bilgi",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+
                 if (msjsonuc2 == DialogResult.OK)
                 {
                     LogIn Grs = new LogIn();
-                    Grs.Show();             // Yeni formu açar
+                    Grs.Show();
                     this.Hide();
                     UserAdd();
                 }
-
             }
-
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void SignUp_Load(object sender, EventArgs e)

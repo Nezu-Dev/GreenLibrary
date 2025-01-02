@@ -1,29 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Runtime.InteropServices;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace GreenLibrary
 {
     public partial class LogIn : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS; Initial Catalog =GreenLibrary; Integrated Security = true;");
+        SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS; Initial Catalog=GreenLibrary; Integrated Security=true;");
         SqlCommand cmd;
         SqlDataAdapter adapt;
-        private void AdjustTextBoxHeight(TextBox textBox)
-        {
-            // Yazı tipi boyutuna göre TextBox yüksekliğini ayarlar
-            textBox.Height = textBox.PreferredHeight;
-        }
-
 
         public LogIn()
         {
@@ -39,6 +26,11 @@ namespace GreenLibrary
         private const int WM_NCLBUTTONDOWN = 0xA1;
         private const int HTCAPTION = 0x2;
 
+        private void AdjustTextBoxHeight(TextBox textBox)
+        {
+            textBox.Height = textBox.PreferredHeight;
+        }
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -46,12 +38,10 @@ namespace GreenLibrary
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            // Bu alan boş bırakılmış.
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            // Bu alan boş bırakılmış.
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
@@ -75,25 +65,15 @@ namespace GreenLibrary
             int count = Convert.ToInt32(cmd.ExecuteScalar());
             con.Close();
 
-            if (count == 1)
-            {
-                return true; // Kullanıcı varsa true döner
-            }
-            else
-            {
-                return false; // Kullanıcı yoksa false döner
-            }
+            return count == 1;
         }
-
 
         private void button2_Click(object sender, EventArgs e)
         {
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-           
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -103,35 +83,33 @@ namespace GreenLibrary
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-          
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             SignUp form2 = new SignUp();
-            form2.Show();             // Yeni formu açar
-            this.Hide();              // Mevcut formu gizler
-
+            form2.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "" || textBox2.Text == "")
+            if (string.IsNullOrWhiteSpace(textBox1.Text) || string.IsNullOrWhiteSpace(textBox2.Text))
             {
                 MessageBox.Show("Lütfen tüm gerekli alanları doldurun.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            string username = textBox1.Text; // Kullanıcı adı
-            string password = textBox2.Text; // Şifre
+
+            string username = textBox1.Text;
+            string password = textBox2.Text;
 
             if (KullaniciDogrula(username, password))
             {
                 MessageBox.Show("Giriş başarılı!");
-                // Yeni bir form açabilir veya işlemlere devam edebilirsiniz
             }
             else
             {
@@ -142,7 +120,7 @@ namespace GreenLibrary
         private void button2_Click_1(object sender, EventArgs e)
         {
             ForgotPassword form3 = new ForgotPassword();
-            form3.Show();             // Yeni formu açar
+            form3.Show();
             this.Hide();
         }
 
@@ -158,7 +136,7 @@ namespace GreenLibrary
         private void button4_Click(object sender, EventArgs e)
         {
             AdminLogin admin = new AdminLogin();
-            admin.Show();             // Yeni formu açar
+            admin.Show();
             this.Hide();
         }
     }

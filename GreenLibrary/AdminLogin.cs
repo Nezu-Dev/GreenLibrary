@@ -12,11 +12,6 @@ namespace GreenLibrary
         SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS; Initial Catalog=GreenLibrary; Integrated Security=true;");
         SqlCommand cmd;
 
-        private void AdjustTextBoxHeight(TextBox textBox)
-        {
-            textBox.Height = textBox.PreferredHeight;
-        }
-
         public AdminLogin()
         {
             InitializeComponent();
@@ -30,6 +25,11 @@ namespace GreenLibrary
 
         private const int WM_NCLBUTTONDOWN = 0xA1;
         private const int HTCAPTION = 0x2;
+
+        private void AdjustTextBoxHeight(TextBox textBox)
+        {
+            textBox.Height = textBox.PreferredHeight;
+        }
 
         private void AdminLogin_Load(object sender, EventArgs e)
         {
@@ -83,8 +83,8 @@ namespace GreenLibrary
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            string adminName = textBox1.Text.Trim(); // Get the Name input
-            string adminPassword = textBox2.Text.Trim(); // Get the Password input
+            string adminName = textBox1.Text.Trim();
+            string adminPassword = textBox2.Text.Trim();
 
             if (string.IsNullOrEmpty(adminName) || string.IsNullOrEmpty(adminPassword))
             {
@@ -92,7 +92,7 @@ namespace GreenLibrary
                 return;
             }
 
-            if (ValidateAdmin(adminName, adminPassword)) // Call the validation method
+            if (ValidateAdmin(adminName, adminPassword))
             {
                 AdminDashboard login = new AdminDashboard();
                 login.Show();
