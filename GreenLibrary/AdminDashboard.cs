@@ -50,5 +50,12 @@ namespace GreenLibrary
                 SendMessage(this.Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
             }
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            AdminLogin al = new AdminLogin();
+            al.Show();
+            this.Hide();
+        }
     }
 }

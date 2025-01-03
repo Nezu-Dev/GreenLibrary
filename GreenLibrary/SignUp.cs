@@ -117,5 +117,12 @@ namespace GreenLibrary
             textBox4.Font = new Font("Poppins", 14, FontStyle.Bold);
             AdjustTextBoxHeight(textBox4);
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            LogIn Lg = new LogIn();
+            Lg.Show();
+            this.Hide();
+        }
     }
 }

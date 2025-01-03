@@ -101,5 +101,12 @@ namespace GreenLibrary
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            LogIn Lg = new LogIn();
+            Lg.Show();
+            this.Hide();
+        }
     }
 }

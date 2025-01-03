@@ -150,5 +150,12 @@ namespace GreenLibrary
 
             Doldur();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            AdminDashboard adminDashboard = new AdminDashboard();
+            adminDashboard.Show();
+            this.Hide();
+        }
     }
 }

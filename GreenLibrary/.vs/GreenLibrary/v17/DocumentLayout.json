@@ -3,48 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\bookmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:bookmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\bookmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:bookmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|c:\\users\\fatih\\desktop\\greenlibrary-main\\greenlibrary\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:admindashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:forgotpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\bookmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:bookmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|c:\\users\\fatih\\desktop\\greenlibrary-main\\greenlibrary\\bookmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:bookmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93027DC0-2D7D-4C0A-87E1-E12A05CD5E4A}|GreenLibrary.csproj|solutionrelative:adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,58 +66,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookManagement.cs",
-              "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\BookManagement.cs",
-              "RelativeDocumentMoniker": "BookManagement.cs",
-              "ToolTip": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\BookManagement.cs",
-              "RelativeToolTip": "BookManagement.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAkwJYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T18:12:34.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BookManagement.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\BookManagement.cs",
-              "RelativeDocumentMoniker": "BookManagement.cs",
-              "ToolTip": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\BookManagement.cs [Design]",
-              "RelativeToolTip": "BookManagement.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T18:11:02.333Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AdminDashboard.cs",
               "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\AdminDashboard.cs",
               "RelativeDocumentMoniker": "AdminDashboard.cs",
               "ToolTip": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\AdminDashboard.cs",
               "RelativeToolTip": "AdminDashboard.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA2wCIAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAADwvzkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-02T18:04:07.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "SignUp.cs",
               "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\SignUp.cs",
               "RelativeDocumentMoniker": "SignUp.cs",
               "ToolTip": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\SignUp.cs",
               "RelativeToolTip": "SignUp.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAYwHUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAA2wHwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-02T18:02:54.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "AdminLogin.cs",
               "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\AdminLogin.cs",
               "RelativeDocumentMoniker": "AdminLogin.cs",
@@ -126,20 +105,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "LogIn.cs",
               "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\LogIn.cs",
               "RelativeDocumentMoniker": "LogIn.cs",
               "ToolTip": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\LogIn.cs",
               "RelativeToolTip": "LogIn.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAiwIkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-30T12:09:30.306Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "AdminDashboard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\AdminDashboard.cs",
               "RelativeDocumentMoniker": "AdminDashboard.cs",
@@ -151,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "LogIn.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\LogIn.cs",
               "RelativeDocumentMoniker": "LogIn.cs",
@@ -163,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "SignUp.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\SignUp.cs",
               "RelativeDocumentMoniker": "SignUp.cs",
@@ -175,18 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ForgotPassword.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\ForgotPassword.cs",
-              "RelativeDocumentMoniker": "ForgotPassword.cs",
-              "ToolTip": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\ForgotPassword.cs [Design]",
-              "RelativeToolTip": "ForgotPassword.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T20:31:08.541Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "AdminLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\AdminLogin.cs",
               "RelativeDocumentMoniker": "AdminLogin.cs",
@@ -195,6 +163,56 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-02T15:42:13.591Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ForgotPassword.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\ForgotPassword.cs",
+              "RelativeDocumentMoniker": "ForgotPassword.cs",
+              "ToolTip": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\ForgotPassword.cs [Design]",
+              "RelativeToolTip": "ForgotPassword.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T20:31:08.541Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ForgotPassword.cs",
+              "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\ForgotPassword.cs",
+              "RelativeDocumentMoniker": "ForgotPassword.cs",
+              "ToolTip": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\ForgotPassword.cs",
+              "RelativeToolTip": "ForgotPassword.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAiwGwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T07:18:51.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookManagement.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\BookManagement.cs",
+              "RelativeDocumentMoniker": "BookManagement.cs",
+              "ToolTip": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\BookManagement.cs [Design]",
+              "RelativeToolTip": "BookManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T18:11:02.333Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookManagement.cs",
+              "DocumentMoniker": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\BookManagement.cs",
+              "RelativeDocumentMoniker": "BookManagement.cs",
+              "ToolTip": "C:\\Users\\Fatih\\Desktop\\GreenLibrary-main\\GreenLibrary\\BookManagement.cs",
+              "RelativeToolTip": "BookManagement.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAUwJ0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T18:12:34.86Z",
+              "EditorCaption": ""
             }
           ]
         }
